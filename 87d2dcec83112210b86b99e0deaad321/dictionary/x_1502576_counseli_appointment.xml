@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="6106d86883512210b86b99e0deaad3b4" label="Appointment" max_length="40" name="x_1502576_counseli_appointment" type="collection">
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Status " max_length="40" name="status" type="choice">
+            <choice/>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Session Type" max_length="40" name="session_type" type="choice">
+            <choice/>
+        </element>
+        <element attributes="encode_utf8=false" label="Student " max_length="32" name="student" reference="x_1502576_counseli_student" type="reference"/>
+        <element attributes="encode_utf8=false" label="Counselor " max_length="32" name="counselor" reference="x_1502576_counseli_counselor" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Date" max_length="40" name="date" type="glide_date"/>
+        <element label="Time" max_length="40" name="time" type="glide_time"/>
+        <index name="index">
+            <element name="counselor"/>
+        </index>
+        <index name="index2">
+            <element name="student"/>
+        </index>
+    </element>
+</database>
