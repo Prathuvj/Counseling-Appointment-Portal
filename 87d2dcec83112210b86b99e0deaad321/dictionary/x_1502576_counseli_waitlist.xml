@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="61e79ce883512210b86b99e0deaad3e9" label="Waitlist" max_length="40" name="x_1502576_counseli_waitlist" type="collection">
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element attributes="encode_utf8=false" label="Counselor" max_length="32" name="counselor" reference="x_1502576_counseli_counselor" type="reference"/>
+        <element attributes="encode_utf8=false" label="Student" max_length="32" name="student" reference="x_1502576_counseli_student" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Preferred Date" max_length="40" name="preferred_date" type="glide_date"/>
+        <element label="Preferred Time" max_length="40" name="preferred_time" type="glide_time"/>
+        <element attributes="encode_utf8=false" label="Original Slot" max_length="32" name="original_slot" reference="x_1502576_counseli_appointment" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Status" max_length="40" name="status" type="choice">
+            <choice/>
+        </element>
+        <index name="index">
+            <element name="counselor"/>
+        </index>
+        <index name="index2">
+            <element name="original_slot"/>
+        </index>
+        <index name="index3">
+            <element name="student"/>
+        </index>
+    </element>
+</database>

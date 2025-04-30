@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="06d6d8a883512210b86b99e0deaad399" label="Feedback" max_length="40" name="x_1502576_counseli_feedback" type="collection">
+        <element label="Rating" max_length="40" name="rating" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element attributes="encode_utf8=false" label="Appointment" max_length="32" name="appointment" reference="x_1502576_counseli_appointment" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Comments" max_length="100" name="comments" type="string"/>
+        <index name="index">
+            <element name="appointment"/>
+        </index>
+    </element>
+</database>
