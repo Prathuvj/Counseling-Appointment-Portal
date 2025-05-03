@@ -7,7 +7,11 @@
         <element label="Preferred Time" max_length="40" name="preferred_time" type="glide_time"/>
         <element attributes="encode_utf8=false" label="Original Slot" max_length="32" name="original_slot" reference="x_1502576_counseli_appointment" type="reference"/>
         <element attributes="edge_encryption_enabled=true" choice="1" label="Status" max_length="40" name="status" type="choice">
-            <choice/>
+            <choice>
+                <element inactive_on_update="false" label="Waiting" sequence="0" value="Waiting"/>
+                <element inactive_on_update="false" label="Promoted" sequence="1" value="Promoted"/>
+                <element inactive_on_update="false" label="Cancelled" sequence="2" value="Cancelled"/>
+            </choice>
         </element>
         <index name="index">
             <element name="counselor"/>

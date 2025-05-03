@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>true</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_1502576_counseli_appointment</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="x_1502576_counseli_appointment">join_waitlist=true^status=full^EQ<item endquery="false" field="join_waitlist" goto="false" newquery="false" operator="=" or="false" value="true"/>
+            <item display_value="Full" endquery="false" field="status" goto="false" newquery="false" operator="=" or="false" value="full"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message><![CDATA[<p>Record added in waitlist</p>]]></message>
+        <name>Insert into Waitlist if Join Waitlist is</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, gS, gU) {
+
+    // Only run if join_waitlist is checked
+    if (current.join_waitlist == true) {
+
+        var waitlist = new GlideRecord('x_1502576_counseli_waitlist');  // Replace with actual table name
+        waitlist.initialize();
+
+        waitlist.student = current.student;
+        waitlist.counselor = current.counselor;
+        waitlist.preferred_date = current.date;
+        waitlist.preferred_time = current.time;
+        waitlist.status = 'Waiting';
+        waitlist.original_slot = current.sys_id;
+
+        waitlist.insert();
+
+        // Optional: reset the checkbox
+        current.join_waitlist = false;
+    }
+
+})(current, gs, gUser);
+]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-01 14:31:15</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>a938d1f483d92210b86b99e0deaad3ea</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name>Insert into Waitlist if Join Waitlist is</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Counseling Appointment Portal" source="x_1502576_counseli">87d2dcec83112210b86b99e0deaad321</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Counseling Appointment Portal">87d2dcec83112210b86b99e0deaad321</sys_scope>
+        <sys_update_name>sys_script_a938d1f483d92210b86b99e0deaad3ea</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-01 17:22:00</sys_updated_on>
+        <template/>
+        <when>after</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=a938d1f483d92210b86b99e0deaad3ea"/>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>a938d1f483d92210b86b99e0deaad3ea</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-01 14:33:20</sys_created_on>
+        <sys_id>282915f483d92210b86b99e0deaad383</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-01 14:33:20</sys_updated_on>
+        <table>sys_script</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

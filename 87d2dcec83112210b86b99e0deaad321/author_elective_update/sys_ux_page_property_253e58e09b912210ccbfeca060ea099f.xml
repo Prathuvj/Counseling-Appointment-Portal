@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_page_property">
+    <sys_ux_page_property action="DELETE">
+        <choices/>
+        <description/>
+        <name>chrome_header</name>
+        <page display_value="">a53e58e0be9122107f9e024581f1da97</page>
+        <required_translations>[]</required_translations>
+        <route display_value="Search Page">653e58e09b91221087b2f40973106ebf</route>
+        <suffix/>
+        <sys_class_name>sys_ux_page_property</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-04-30 15:37:31</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>global</sys_domain_path>
+        <sys_id>253e58e09b912210ccbfeca060ea099f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>chrome_header</sys_name>
+        <sys_package display_value="Counseling Appointment Portal" source="x_1502576_counseli">87d2dcec83112210b86b99e0deaad321</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Counseling Appointment Portal">87d2dcec83112210b86b99e0deaad321</sys_scope>
+        <sys_update_name>sys_ux_page_property_253e58e09b912210ccbfeca060ea099f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-04-30 15:37:31</sys_updated_on>
+        <type>json</type>
+        <unique_name>x_1502576_counseli.a53e58e0be9122107f9e024581f1da97.route.chrome_header.653e58e09b91221087b2f40973106ebf</unique_name>
+        <value>{&#13;
+    "privatePage":{&#13;
+       "searchEnabled": false&#13;
+    }&#13;
+}&#13;
+</value>
+    </sys_ux_page_property>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Counseling Appointment Portal">87d2dcec83112210b86b99e0deaad321</application>
+        <file_path/>
+        <instance_id>a58f75ecdb4275d4199b172913961963</instance_id>
+        <instance_name>dev190791</instance_name>
+        <name>sys_ux_page_property_253e58e09b912210ccbfeca060ea099f</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_page_property"><sys_ux_page_property action="INSERT_OR_UPDATE"><choices/><description/><name>chrome_header</name><page display_value="">a53e58e0be9122107f9e024581f1da97</page><required_translations>[]</required_translations><route display_value="Search Page">653e58e09b91221087b2f40973106ebf</route><suffix/><sys_class_name>sys_ux_page_property</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-04-30 15:37:31</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>global</sys_domain_path><sys_id>253e58e09b912210ccbfeca060ea099f</sys_id><sys_mod_count>0</sys_mod_count><sys_name>chrome_header</sys_name><sys_package display_value="Counseling Appointment Portal" source="x_1502576_counseli">87d2dcec83112210b86b99e0deaad321</sys_package><sys_policy/><sys_scope display_value="Counseling Appointment Portal">87d2dcec83112210b86b99e0deaad321</sys_scope><sys_update_name>sys_ux_page_property_253e58e09b912210ccbfeca060ea099f</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-04-30 15:37:31</sys_updated_on><type>json</type><unique_name>x_1502576_counseli.a53e58e0be9122107f9e024581f1da97.route.chrome_header.653e58e09b91221087b2f40973106ebf</unique_name><value>{&#13;
+    "privatePage":{&#13;
+       "searchEnabled": false&#13;
+    }&#13;
+}&#13;
+</value></sys_ux_page_property></record_update>]]></payload>
+        <payload_hash>1343633466</payload_hash>
+        <record_name>chrome_header</record_name>
+        <reverted_from/>
+        <source>03f4943383202210b86b99e0deaad396</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>current</state>
+        <sys_created_by/>
+        <sys_created_on>2025-04-03 10:30:16</sys_created_on>
+        <sys_id>c9dfd86483912210b86b99e0deaad3ae</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>195fb3392c00000000</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-03 03:06:40</sys_updated_on>
+        <type>UX Page Property</type>
+        <update_guid>89dfd86436912210795e74a670ae07ae</update_guid>
+        <update_guid_history>89dfd86436912210795e74a670ae07ae:1343633466</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-04-30 15:44:30</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_page_property">sys_ux_page_property</sys_db_object>
+        <sys_id>2a1caa9f878047a88558fa9f0ccdae40</sys_id>
+        <sys_metadata>253e58e09b912210ccbfeca060ea099f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>chrome_header</sys_name>
+        <sys_package display_value="Counseling Appointment Portal" source="x_1502576_counseli">87d2dcec83112210b86b99e0deaad321</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Counseling Appointment Portal">87d2dcec83112210b86b99e0deaad321</sys_scope>
+        <sys_scope_delete display_value="">825c0f3b470f4e86aa76400776deb0e4</sys_scope_delete>
+        <sys_update_name>sys_ux_page_property_253e58e09b912210ccbfeca060ea099f</sys_update_name>
+        <sys_update_version display_value="sys_ux_page_property_253e58e09b912210ccbfeca060ea099f">c9dfd86483912210b86b99e0deaad3ae</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-04-30 15:44:30</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_policy">
+    <sys_ui_policy action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <conditions table="x_1502576_counseli_appointment">status=full^EQ<item display_value="Full" endquery="false" field="status" goto="false" newquery="false" operator="=" or="false" value="full"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </conditions>
+        <description/>
+        <global>true</global>
+        <inherit>false</inherit>
+        <isolate_script>true</isolate_script>
+        <model_id/>
+        <model_table/>
+        <on_load>true</on_load>
+        <order>10</order>
+        <reverse_if_false>true</reverse_if_false>
+        <run_scripts>true</run_scripts>
+        <script_false><![CDATA[function onCondition() {
+    // If checkbox is unchecked and Status is not "Full", you may want to remove the record from the waitlist
+    if (g_form.getValue('join_waitlist') == 'false' && g_form.getValue('status') != 'Full') {
+        var waitlist = new GlideRecord('waitlist_table'); // Replace with actual Waitlist table name
+        waitlist.addQuery('appointment_id', g_form.getValue('sys_id'));
+        waitlist.query();
+        
+        if (waitlist.next()) {
+            // If the record is found in the waitlist, delete it
+            waitlist.deleteRecord();
+            
+            // Optionally, show a message confirming the action
+            g_form.showFieldMsg('join_waitlist', 'Your appointment has been removed from the waitlist.', 'info');
+        }
+    }
+}
+]]></script_false>
+        <script_true><![CDATA[function onCondition() {
+    // Check if the "Join Waitlist" checkbox is checked and if the Status is "Full"
+    if (g_form.getValue('join_waitlist') == 'true' && g_form.getValue('status') == 'Full') {
+        // Create a new record in the Waitlist table
+        var waitlist = new GlideRecord('waitlist_table'); // Replace with your actual Waitlist table name
+        waitlist.initialize();
+        
+        // Copy relevant fields from Appointment to Waitlist
+        waitlist.appointment_id = g_form.getValue('sys_id'); // Assuming sys_id is the unique identifier
+        waitlist.customer_name = g_form.getValue('customer_name');
+        waitlist.customer_email = g_form.getValue('customer_email');
+        waitlist.status = 'Waitlisted'; // Or any other relevant status for waitlist
+        
+        // Insert the new record into the Waitlist table
+        waitlist.insert();
+        
+        // Optionally, you can display a message to confirm the action
+        g_form.showFieldMsg('join_waitlist', 'Your appointment has been added to the waitlist.', 'info');
+    }
+}
+]]></script_true>
+        <set_values/>
+        <short_description>Show Join Waitlist checkbox when Status is Full</short_description>
+        <sys_class_name>sys_ui_policy</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-01 13:20:54</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>d788c93483992210b86b99e0deaad3c1</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Show Join Waitlist checkbox when Status is Full</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Counseling Appointment Portal" source="x_1502576_counseli">87d2dcec83112210b86b99e0deaad321</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Counseling Appointment Portal">87d2dcec83112210b86b99e0deaad321</sys_scope>
+        <sys_update_name>sys_ui_policy_d788c93483992210b86b99e0deaad3c1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-01 17:42:09</sys_updated_on>
+        <table>x_1502576_counseli_appointment</table>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_ui_policy>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>d788c93483992210b86b99e0deaad3c1</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-01 17:42:01</sys_created_on>
+        <sys_id>dc548238839d2210b86b99e0deaad378</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-01 17:42:01</sys_updated_on>
+        <table>sys_ui_policy</table>
+        <use_es_latest>false</use_es_latest>
+    </sys_es_latest_script>
+</record_update>
