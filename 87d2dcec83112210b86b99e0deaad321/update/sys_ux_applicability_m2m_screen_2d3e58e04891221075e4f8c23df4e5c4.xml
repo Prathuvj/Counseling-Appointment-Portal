@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_applicability_m2m_screen">
+    <sys_ux_applicability_m2m_screen action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applicability display_value="Public">e13e58e01f91221053317a94f39f41ce</applicability>
+        <order>0</order>
+        <screen display_value="">693e58e0c2912210a74805e3f168b1c4</screen>
+        <sys_class_name>sys_ux_applicability_m2m_screen</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-04-30 15:37:29</sys_created_on>
+        <sys_id>2d3e58e04891221075e4f8c23df4e5c4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Counseling Appointment Portal" source="x_1502576_counseli">87d2dcec83112210b86b99e0deaad321</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Counseling Appointment Portal">87d2dcec83112210b86b99e0deaad321</sys_scope>
+        <sys_update_name>sys_ux_applicability_m2m_screen_2d3e58e04891221075e4f8c23df4e5c4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-04-30 15:37:29</sys_updated_on>
+    </sys_ux_applicability_m2m_screen>
+</record_update>

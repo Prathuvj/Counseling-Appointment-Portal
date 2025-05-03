@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="session_type" table="x_1502576_counseli_appointment" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>session_type</element>
+            <name>x_1502576_counseli_appointment</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-05-01 03:38:17</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>session_type</sys_name>
+            <sys_package display_value="Counseling Appointment Portal" source="x_1502576_counseli">87d2dcec83112210b86b99e0deaad321</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Counseling Appointment Portal">87d2dcec83112210b86b99e0deaad321</sys_scope>
+            <sys_update_name>sys_choice_x_1502576_counseli_appointment_session_type</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-05-01 03:38:17</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>session_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Carrer</label>
+            <language>en</language>
+            <name>x_1502576_counseli_appointment</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-05-01 03:38:17</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-05-01 03:38:17</sys_updated_on>
+            <value>Carrer</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>session_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Mental Health</label>
+            <language>en</language>
+            <name>x_1502576_counseli_appointment</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-05-01 03:38:17</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-05-01 03:38:17</sys_updated_on>
+            <value>Mental Health</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>session_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Academic</label>
+            <language>en</language>
+            <name>x_1502576_counseli_appointment</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-05-01 03:38:17</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-05-01 03:38:17</sys_updated_on>
+            <value>Academic</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>
